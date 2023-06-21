@@ -1,6 +1,7 @@
 {
   "name": "ashr2",
   "version": "0.1.0",
+  "homepage": "https://ashr2.github.io/Personal-Website",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -12,12 +13,17 @@
     "react-card-flip": "^1.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
+    "react-refresh-webpack-plugin": "^0.1.0",
     "react-simple-icons": "^1.0.0-beta.5",
     "react-typist-component": "^1.0.5",
     "simple-icons": "^9.2.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.88.0",
+    "webpack-dev-server": "^4.15.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
