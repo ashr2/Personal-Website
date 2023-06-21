@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Typist from 'react-typist-component';
 import './Card.css'
 import Lottie from 'lottie-react';
-import { SiPython, SiPytorch, SiOcaml, SiTensorflow, SiBinance} from "react-icons/si";
+import { SiPython, SiPytorch, SiOcaml, SiTensorflow, SiBinance, SiReact, SiHtml5, SiCss3, SiFirebase} from "react-icons/si";
 import { FaGithub } from 'react-icons/fa';
 import ReactCardFlip from 'react-card-flip';
 
@@ -33,6 +33,14 @@ const HorizontalCard = (props) => {
             return <SiTensorflow className="tensorflow px-3" size={70}/>;
         case "binance":
             return <SiBinance className="binance px-3" size={70}/>
+        case "react":
+            return <SiReact className="react px-3" size={70}/>
+        case "html":
+            return <SiHtml5 className="html px-3" size={70}/>
+        case "css":
+            return <SiCss3 className="css px-3" size={70}/>
+        case "firebase":
+            return <SiFirebase className="firebase px-3" size={70}/>
         default:
             return null;
         }

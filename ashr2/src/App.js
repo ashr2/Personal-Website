@@ -1,10 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
 import CardContainer from './components/CardContainer/CardContainer';
+import AboutMe from './components/AboutMe/AboutMe';
 import HorizontalCard from './components/Card/Card';
 function App() {
   return (
       <div className="App">
+        <AboutMe 
+          name="Ashwath Rajesh"
+          subheader="Aspiring Software Engineer"
+          bio={<div><p>
+          &emsp;I'm an ambitious Computer Science and Mathematics student from the University of Maryland, 
+          who is passionate about blending the mathematical and programming realms to craft 
+          innovative solutions. My proficiency spans various languages, including Java, Python, Ruby, 
+          C/C++, SQL, JavaScript, and HTML/CSS, with an emphasis on leveraging frameworks 
+          such as React and Node.js to develop interactive applications.
+          </p>
+          <p>
+          &emsp; As an undergraduate research assistant, 
+          I've honed my skills in machine learning and image recognition, 
+          developing a highly accurate model using Python and PyTorch. 
+          As a Teaching Assistant, I've demonstrated my ability to deliver comprehensive support 
+          and impart crucial knowledge to a large class of future computer scientists, 
+          deepening their understanding of the mathematics that underpin our field.
+          </p>
+          <p>
+          &emsp;My passion for solving problems and creating user-friendly applications is
+           showcased in my projects, which you can look at below
+           </p>
+          </div>}
+          image="https://media.licdn.com/dms/image/C4D03AQEGSlXl4AjCUQ/profile-displayphoto-shrink_800_800/0/1632510459980?e=2147483647&v=beta&t=Fk93WwmGmt6jmo2fM7G58i51vBdwuddd9K7x6Tx5Eug" />
         <HorizontalCard title = "HOOP DETECTION MODEL"
         description = {<p>I successfully developed and trained an image recognition model leveraging <strong> Python </strong> and <strong>PyTorch</strong>,
         which notably <strong>reduced prediction errors</strong> to an average of just <strong>0.05</strong>. 
@@ -39,7 +64,7 @@ function App() {
           integrated Google Sheets for efficient storage and retrieval of apartment data
            within the application. This leasing app aims to provide a convenient and 
            user-friendly platform for individuals seeking housing options in College Park.</p>}
-       technologies = {["python", "pytorch"]}
+       technologies = {["react", "html", "css", "firebase"]}
        animationUrl = 'https://assets6.lottiefiles.com/packages/lf20_y43UmaPSlu.json'
         />
       </div>

@@ -55,6 +55,22 @@ a {
 .github {
     color: black
 }
+
+.react {
+    color: #61DAFB
+}
+
+.html {
+    color: #E34F26
+}
+
+.css {
+    color: #1572B6
+}
+
+.firebase {
+    color: #FFCA28
+}
 .demo {
     font-family: 'Roboto', sans-serif;
     font-size: 60px;
