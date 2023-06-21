@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@900&display=swap');
+.card {
+    translate: -1% -1%;
+    border-radius: 0%;
+    border: 2px solid rgb(0, 0, 0); 
+    box-shadow: 40px 40px 0px black; 
+    background-color: #DDECDF;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    height: 20%;
+    width: auto;
+    cursor: pointer;
+}
+.card:hover {
+    translate: -1% -1%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 0%;
+    box-shadow: 40px 40px 0px black;
+    background-color: white;
+}
+.title {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.description {
+    text-align: left;
+    font-size: 21px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.ocaml {
+    color: #EC6813
+}
+
+.pytorch {
+    color: #EE4C2C
+}
+
+.python {
+    color: #3776AB
+}
+
+.tensorflow {
+    color: #FF6F00
+}
+
+.binance {
+    color: #F0B90B
+}
+a {
+    text-decoration: none;
+}
+
+.github {
+    color: black
+}
+.demo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    color: black;
+}
