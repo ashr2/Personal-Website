@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Typist from 'react-typist-component';
 import './Card.css'
 import Lottie from 'lottie-react';
-import { SiPython, SiPytorch, SiOcaml, SiTensorflow, SiBinance, SiReact, SiHtml5, SiCss3, SiFirebase} from "react-icons/si";
+import { SiPython, SiPytorch, SiOcaml, SiTensorflow, SiBinance, SiReact, SiHtml5, SiCss3, SiFirebase, SiC} from "react-icons/si";
 import { FaGithub } from 'react-icons/fa';
 import ReactCardFlip from 'react-card-flip';
 
@@ -41,6 +41,8 @@ const HorizontalCard = (props) => {
             return <SiCss3 className="css px-3" size={70}/>
         case "firebase":
             return <SiFirebase className="firebase px-3" size={70}/>
+        case "c":
+            return <SiC className="c px-3" size={70}/>
         default:
             return null;
         }
@@ -48,8 +50,10 @@ const HorizontalCard = (props) => {
 
     return (
         <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical" isInteractable = {true}>
-            <div onClick={handleClick}>
-                <div className="card container" style={{height:600, width:1000}}>
+            <div onClick={handleClick}
+                id={props.cardId}
+            >
+                <div className="front card container" style={{height:600, width:1000}}>
                         <div className="row g-0">
                             <div className="col-md-5 d-flex align-items-center justify-content-center">
                                 {animationData && <Lottie animationData={animationData} style={{ height: 500, width: 500 }} />}
@@ -77,20 +81,21 @@ const HorizontalCard = (props) => {
             </div>
 
             <div onClick={handleClick}>
-                <div className="card container"style={{height:600, width: 1000 }}>
+                <div className="front card container"style={{height:600, width: 1000 }}>
                     <div className="row g-0" style={{height:500, width: 1000}}>
                     <div className="d-flex align-items-center justify-content-center">
+                        {props.github &&                         
                         <a
-                        href="https://github.com/your-demo-link"
+                        href={props.github}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-4"
                         >
                         <FaGithub className="github" size={60} /> 
-                        </a>
-                        <a href="https://github.com">
-                            <h1 className='demo'>Demo website</h1>
-                        </a>
+                        </a>}
+                        {props.demo && 
+                            <h1 className='demo'>{props.demo}</h1>
+                        }
                     </div>
                     </div>
              </div>

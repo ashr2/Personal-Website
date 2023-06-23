@@ -1,0 +1,19 @@
+.icon-bar {
+    padding: 30px;
+    background-color: #7F1986;
+    border-radius: 10px;
+}
+
+.about-me-icon {
+    color: #fff;
+}
+
+.about-me-icon:hover {
+    color: #8EE387;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+
+

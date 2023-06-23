@@ -39,6 +39,8 @@
 .profile-photo {
     border-radius: 50%;
     animation: shapeChange 2s infinite;
+    height:50%;
+    width:'auto';
 }
 
 @keyframes shapeChange {
@@ -47,11 +49,71 @@
         transform: rotate(0deg);
     }
     50% {
-        border-radius: 0;
+        border-radius: 15%;
         transform: rotate(0deg);
     }
     100% {
         border-radius: 50%;
         transform: rotate(0deg);
     }
+}
+
+.ocaml {
+    color: #EC6813
+}
+
+.pytorch {
+    color: #EE4C2C
+}
+
+.python {
+    color: #3776AB
+}
+
+.tensorflow {
+    color: #FF6F00
+}
+
+.binance {
+    color: #F0B90B
+}
+a {
+    text-decoration: none;
+}
+
+.github {
+    color: black
+}
+
+.react {
+    color: #61DAFB
+}
+
+.html {
+    color: #E34F26
+}
+
+.css {
+    color: #1572B6
+}
+
+.firebase {
+    color: #FFCA28
+}
+
+.icon-bar {
+    margin-top: 30px;
+    padding: 10px;
+    background: #333;
+    border-radius: 10px;
+}
+
+.about-me-icon {
+    color: #fff;
+}
+
+.about-me-icon:hover {
+    color: #00d8d6;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
 }

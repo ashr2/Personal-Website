@@ -4,6 +4,7 @@ import './AboutMe.css';
 import Typist from 'react-typist-component';
 import me from './aboutme.json';
 import Lottie from 'lottie-react'
+import {SiReadme, SiGithub, SiPython, SiPytorch, SiOcaml, SiTensorflow, SiBinance, SiReact, SiHtml5, SiCss3, SiFirebase, SiC} from "react-icons/si";
 const AboutMe = ({ name, subheader, bio, image }) => {
     return (
         <Container fluid className="about-me-container">
@@ -20,6 +21,7 @@ const AboutMe = ({ name, subheader, bio, image }) => {
                         <Image 
                         src = "https://media.licdn.com/dms/image/C4D03AQEGSlXl4AjCUQ/profile-displayphoto-shrink_800_800/0/1632510459980?e=2147483647&v=beta&t=Fk93WwmGmt6jmo2fM7G58i51vBdwuddd9K7x6Tx5Eug"
                         className="profile-photo"
+                        style={{width: '75%', height: 'auto', marginTop:'10%'}}
                         />
                 </div>
                 </Col>
