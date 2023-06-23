@@ -4,6 +4,7 @@ import { SiReadme, SiGithub, SiReact, SiC, SiOcaml, SiJavascript, SiPython, SiHt
 import './TechStack.css'
 import { Link, animateScroll as scroll } from "react-scroll";
 const TechStack = () => {
+    const scrollSpeed = 100
     return (
         <Row className="techstack justify-content-md-left text-center icon-bar">
             <Col md={1} className="resume about-me-icon">
@@ -27,7 +28,7 @@ const TechStack = () => {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={500}
+                    duration={scrollSpeed}
                 >
                     <SiReact
                     size={50}/>
@@ -40,7 +41,7 @@ const TechStack = () => {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={500}
+                    duration={scrollSpeed}
             >
                 <SiC size={50}/>
             </Link>
@@ -52,7 +53,7 @@ const TechStack = () => {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={500}
+                    duration={scrollSpeed}
             >
                 <SiJavascript size={50}/>
             </Link>
@@ -64,7 +65,7 @@ const TechStack = () => {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={500}
+                    duration={scrollSpeed}
             >
                 <SiPython size={50}/>
             </Link>
@@ -76,7 +77,7 @@ const TechStack = () => {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={500}
+                    duration={scrollSpeed}
             >
                 <SiHtml5 size={50}/>
             </Link>
@@ -88,7 +89,7 @@ const TechStack = () => {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={500}
+                    duration={scrollSpeed}
             >
                 <SiCss3 size={50}/>
             </Link>
@@ -100,7 +101,7 @@ const TechStack = () => {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={500}
+                    duration={scrollSpeed}
             >
                 <SiOcaml size={50}/>
             </Link>
@@ -112,12 +113,11 @@ const TechStack = () => {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={500}
+                    duration={scrollSpeed}
             >
                 <SiPytorch size={50}/>
             </Link>
             </Col>
-            {/* Add more technology icons here */}
         </Row>
     );
 };
