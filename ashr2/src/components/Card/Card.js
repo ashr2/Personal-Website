@@ -94,7 +94,9 @@ const HorizontalCard = (props) => {
                         <FaGithub className="github" size={60} /> 
                         </a>}
                         {props.demo && 
+                        <a href = {"https://" + props.demo}>
                             <h1 className='demo'>{props.demo}</h1>
+                        </a>
                         }
                     </div>
                     </div>

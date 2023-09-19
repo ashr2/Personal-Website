@@ -57,7 +57,7 @@ function App() {
           I also focused on creating a <strong>visually appealing user experience</strong>, 
           showcasing apartments in an engaging way. This leasing app aims to provide a convenient and 
            user-friendly platform for individuals seeking housing options in College Park.</p>}
-       demo="DEMO COMING SOON"
+       demo="terrapintenants.com"
        technologies = {["react", "html", "css", "firebase"]}
        animationUrl = 'https://assets6.lottiefiles.com/packages/lf20_y43UmaPSlu.json'
         />
